@@ -28,7 +28,7 @@ public class Consulta {
 		ArrayList<Pet> listaConsultaPriori = new ArrayList();
 		
 		consultas = new HashMap<Integer, Pet>();
-		//coment
+		
 		//Adiciona exemplos pra teste
  		Pet pet1 = new Pet(1, "Laika", "cachorro", "poodle", false, "Cardiologista");
  		Pet pet2 = new Pet(2, "shera", "cachorro", "pastor", false, "Cardiologista");
