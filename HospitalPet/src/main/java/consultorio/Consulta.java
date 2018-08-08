@@ -71,7 +71,7 @@ public class Consulta {
 		}
 		}
  }
-
+//Retorna os valores do pet, salvo no mapeamento, por id do médico
  @RequestMapping(value = "/consulta/{id}", method = RequestMethod.GET)
  public ResponseEntity<Pet> buscar(@PathVariable("id") Integer id) {
    
