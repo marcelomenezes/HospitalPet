@@ -64,6 +64,7 @@ public class Consulta {
 			if(pet.getNecessita().equals(medico.getEspecialidade())) {
 				System.out.println("pet: ");
 				System.out.println(pet.getNome());
+				//Salva através do id do médico o primeiro paciente pet da lista
 				consultas.put(medico.getId(), pet);
 				break;
 			}
@@ -73,10 +74,9 @@ public class Consulta {
 
  @RequestMapping(value = "/consulta/{id}", method = RequestMethod.GET)
  public ResponseEntity<Pet> buscar(@PathVariable("id") Integer id) {
-   Pet pet = consultas.get(id);
    
+	 Pet pet = consultas.get(id);
    
-  
    if (pet == null) {
      return new ResponseEntity<Pet>(HttpStatus.NOT_FOUND);
    }
