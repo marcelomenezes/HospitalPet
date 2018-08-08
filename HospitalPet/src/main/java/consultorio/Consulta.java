@@ -49,7 +49,7 @@ public class Consulta {
 		
 		listaConsulta = (ArrayList<Pet>)listaPet.clone();
 
-		//Escalona os atendimentos prioritários
+		//Escalona os atendimentos prioritários adicionando-os numa lista prioritária
 		for(Pet pet: listaPet) { 
 			if (pet.isUrgente()) {
 				if(pet.getNecessita() == pet.getNecessita())
@@ -57,6 +57,7 @@ public class Consulta {
 				listaConsulta.remove(pet);
 			}
 		}
+		//adiciona o atendimentos normais na lista de prioritária, para que, estes fiquem atrás das prioridades
 		listaConsultaPriori.addAll(listaConsulta);
 		for(Medico medico: listaMedico) {
 		for(Pet pet: listaConsultaPriori) {
