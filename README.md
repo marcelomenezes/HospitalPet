@@ -10,5 +10,5 @@ Ao iniciar o servidor Spring boot:(Run as, Java Application)
 
 Acessar o browser: http://localhost:8080/consulta/1
 
-No caso, "1" é o id do médico cadastrado, com isso será retornado os dados do próximo "paciente" pet, a ser atendido por este médico. Podendo ser alterado para o id desejado, que esteja previamente cadastrado.
+No exemplo: "1" é o id do médico cadastrado, com isso será retornado os dados do próximo "paciente" pet, a ser atendido por este médico. Podendo ser alterado para o id desejado, que esteja previamente cadastrado.
 
